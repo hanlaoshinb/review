@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>渡愿灵田 - 美术概念包</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #071618;
+      --panel: #102528;
+      --ink: #f2e3bc;
+      --muted: #adc1b8;
+      --line: rgba(242, 227, 188, 0.18);
+      --gold: #e7b86c;
+      --teal: #63d2bf;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, #18363a 0, var(--bg) 44rem);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.55;
+    }
+
+    main {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 28px;
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(34px, 5vw, 64px);
+      letter-spacing: 0;
+      line-height: 1.05;
+    }
+
+    .tagline {
+      max-width: 760px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 20px;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .badge {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 12px;
+      color: #fff4d6;
+      background: rgba(231, 184, 108, 0.08);
+      font-size: 14px;
+    }
+
+    section {
+      margin-top: 34px;
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      color: var(--gold);
+      font-size: 22px;
+      letter-spacing: 0;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(16, 37, 40, 0.78);
+      padding: 20px;
+    }
+
+    .panel p,
+    .panel ul {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .panel ul {
+      padding-left: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    figure {
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #0b1719;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    figcaption {
+      padding: 14px 16px 16px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      background: rgba(3, 11, 12, 0.68);
+    }
+
+    figcaption strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--ink);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(16, 37, 40, 0.78);
+    }
+
+    th,
+    td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    td {
+      color: var(--muted);
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .note {
+      color: var(--muted);
+      border-left: 3px solid var(--teal);
+      padding-left: 14px;
+    }
+
+    @media (max-width: 860px) {
+      main {
+        width: min(100% - 24px, 720px);
+        padding-top: 30px;
+      }
+
+      .summary,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>渡愿灵田</h1>
+      <p class="tagline">在鬼怪横行的常夜里，为先人种下未了愿望，把破败小院养成温暖归处。</p>
+      <div class="badge-row">
+        <span class="badge">24 小时常夜</span>
+        <span class="badge">温柔微恐</span>
+        <span class="badge">中式灵田</span>
+        <span class="badge">鬼市愿单</span>
+        <span class="badge">祈福渡魂</span>
+      </div>
+    </header>
+
+    <section class="summary">
+      <div class="panel">
+        <h2>概念定位</h2>
+        <p>这不是普通农场的夜间滤镜，而是一套从场景、作物、建筑、NPC 到 UI 都统一的“常夜种田”包装。画面神秘、阴雾、鬼火常驻，但角色和作物保持可爱、可收集、可长期经营。</p>
+      </div>
+      <div class="panel">
+        <h2>安全线</h2>
+        <ul>
+          <li>不出现血腥、残肢、直观刑罚或强惊吓脸。</li>
+          <li>鬼怪表现为温和半透明亡魂，服务羁绊和订单。</li>
+          <li>作物是“好看但阴间”，避免重口恐怖。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>首批概念图</h2>
+      <div class="grid">
+        <figure>
+          <img src="images/01-main-yard.png" alt="常夜灵田主场景">
+          <figcaption><strong>01 主场景</strong>常夜灵田、破败小院、暖纸灯、温和亡魂、远处鬼市入口。</figcaption>
+        </figure>
+        <figure>
+          <img src="images/02-spirit-crops.png" alt="灵植作物设定">
+          <figcaption><strong>02 作物设定</strong>功德莲、忘忧草、彼岸花、断尘墨兰、安魂稻、月露白菇、青灯葫芦、六道轮回果。</figcaption>
+        </figure>
+        <figure>
+          <img src="images/03-ghost-market-ui.png" alt="鬼市订单界面">
+          <figcaption><strong>03 鬼市订单 UI</strong>愿单、符纸卡、青铜资源、亡魂头像和灵植需求。</figcaption>
+        </figure>
+        <figure>
+          <img src="images/04-forgotten-river-explore.png" alt="忘川探索场景">
+          <figcaption><strong>04 忘川探索</strong>旧渡、打水、钓鱼、河灯与可收集遗物。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>玩法包装映射</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>当前经营元素</th>
+            <th>新包装名称</th>
+            <th>视觉关键词</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>面包店</td><td>忘忧汤屋</td><td>木构小铺、药炉、暖黄灯、青烟</td></tr>
+          <tr><td>原料店</td><td>灵材铺</td><td>抽屉柜、符纸、药草束、青铜秤</td></tr>
+          <tr><td>仓库</td><td>功德仓</td><td>木牌、莲纹、封印锁、微光</td></tr>
+          <tr><td>商店</td><td>鬼市小铺</td><td>夜市招幡、纸灯、铜钱、温和鬼客</td></tr>
+          <tr><td>探险入口</td><td>阴雾秘境 / 忘川旧渡</td><td>石阶、雾门、河灯、旧渡船</td></tr>
+          <tr><td>订单</td><td>愿单 / 渡魂委托</td><td>符纸委托、亡魂头像、作物需求</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <p class="note">建议对外主标题：24 小时常夜微恐种田。副标题：种下先人的愿望，点亮阴雾中的归途。</p>
+    </section>
+  </main>
+</body>
+</html>
+
